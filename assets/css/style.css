@@ -4,9 +4,9 @@
 :root {
     --primary-font: 'Crete Round', serif;
     --secondary-font: 'Noto Sans', sans-serif;
-    --primary-color: #3a2620; /* dark brown */
+    --primary-color: #40280a; /* dark brown */
     --secondary-color: #fdf5de; /* background-color: ; */
-    --highlight-color: #3a2620; /* text-colour */
+    --highlight-color: #40280a; /* text-colour */
     --element-color: #8a4512; /* light brown */
     --light-highlight-color: #7a9fc2; /* light blue */
 }
@@ -20,7 +20,7 @@ body {
 
 .element {
     background-color: var(--element-color);
-    color: white;
+    color: var(--secondary-color);
 }
 
 /* Typography: headings use the primary brand font; body and UI use the secondary font */
@@ -66,5 +66,22 @@ input, textarea, select {
     body {
         padding-top: 70px; /* slightly smaller on mobile/tablet */
     }
+}
+
+/* Navbar and footer text should use the secondary color variable */
+.navbar.element .navbar-brand,
+.navbar.element .nav-link {
+    color: var(--secondary-color) !important;
+}
+
+.navbar.element .navbar-toggler {
+    border-color: var(--secondary-color) !important;
+}
+
+/* Footer overrides: `.element` sets color:white globally, override it here for footer */
+footer.element,
+footer.element small,
+footer.element a {
+    color: var(--secondary-color) !important;
 }
 
