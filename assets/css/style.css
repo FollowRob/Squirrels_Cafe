@@ -85,3 +85,16 @@ footer.element a {
     color: var(--secondary-color) !important;
 }
 
+/* Navbar logo sizing */
+.navbar-logo {
+    height: 40px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 992px) {
+    .navbar-logo {
+        height: 48px;
+    }
+}
+
