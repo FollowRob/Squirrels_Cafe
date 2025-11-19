@@ -57,13 +57,13 @@ input, textarea, select {
 /* When navbar is fixed, add spacing to body so content isn't hidden under it */
 /* Adjust values if your navbar height changes due to font-size or padding */
 @media (min-width: 992px) {
-    body {
+    header {
         padding-top: 80px; /* enough for larger navbar on desktop */
     }
 }
 
 @media (max-width: 991.98px) {
-    body {
+    header {
         padding-top: 70px; /* slightly smaller on mobile/tablet */
     }
 }
@@ -96,5 +96,10 @@ footer.element a {
     .navbar-logo {
         height: 48px;
     }
+}
+
+main,
+section:first-of-type {
+    padding-top: 100px;
 }
 
